@@ -9,7 +9,7 @@ export default defineConfig({
   ],
   base:"/Autointellica-data-analytics",
   server: {
-    port: 3000,
+    port: "https://siddhesh0389.github.io/",
     proxy: {
       '/api': {
         target: 'https://autointellica-backend.onrender.com',
