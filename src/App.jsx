@@ -15,14 +15,13 @@ import './styles/globals.css'
 function App() {
   return (
     <DataProvider>
-      <Router>
+      <Router basename="/Autointellica-data-analytics">
         <div className="min-h-screen flex flex-col bg-linear-to-br from-purple-50 to-indigo-50">
           {/* Navbar - Fixed at top */}
           <Navbar />
           
           {/* Main content - Scrollable */}
           <main className="flex-1">
-            <Router basename="/Autointellica-data-analytics">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/upload" element={<DataUpload />} />
@@ -31,7 +30,6 @@ function App() {
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/reports" element={<Reports />} />
             </Routes>
-            </Router>
           </main>
           
           {/* Footer - Always at bottom */}
