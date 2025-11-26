@@ -15,7 +15,7 @@ import './styles/globals.css'
 function App() {
   return (
     <DataProvider>
-      <Router basename="/Autointellica-data-analytics">
+      <Router>
         <div className="min-h-screen flex flex-col bg-linear-to-br from-purple-50 to-indigo-50">
           {/* Navbar - Fixed at top */}
           <Navbar />
