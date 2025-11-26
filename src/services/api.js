@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 // Vite uses import.meta.env, not process.env
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://autointellica-backend.onrender.com/api'
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 console.log('🔗 API Base URL:', API_BASE_URL);
 
