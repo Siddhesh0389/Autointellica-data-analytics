@@ -7,14 +7,26 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base:"/",
+  base: "/Autointellica-data-analytics/", // Add trailing slash
   server: {
     port: 3000,
     proxy: {
       '/api': {
         target: 'https://autointellica-backend.onrender.com',
-        changeOrigin: true
+        changeOrigin: true,
+        secure: false,
+        // Add these for better debugging
+        configure: (proxy, _options) => {
+          proxy.on('error', (err, _req, _res) => {
+            console.log('proxy error', err);
+          });
+        },
       }
     }
+  },
+  build: {
+    outDir: 'dist',
+    // Ensure assets are loaded from correct path
+    assetsDir: 'assets',
   }
 })
