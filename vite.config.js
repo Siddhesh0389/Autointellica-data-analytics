@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base:"/autointellica",
+  base:"/Autointellica-data-analytics",
   server: {
     port: 3000,
     proxy: {
