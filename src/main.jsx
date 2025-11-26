@@ -10,9 +10,7 @@ const basename = window.location.hostname === 'siddhesh0389.github.io'
   : '';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
 )
