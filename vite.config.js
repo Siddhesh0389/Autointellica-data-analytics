@@ -12,7 +12,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://autointellica-backend.onrender.com/api',
+        target: 'https://autointellica-backend.onrender.com',
         changeOrigin: true,
         secure: false,
         // Add these for better debugging
