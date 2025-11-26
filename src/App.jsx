@@ -22,6 +22,7 @@ function App() {
           
           {/* Main content - Scrollable */}
           <main className="flex-1">
+            <Router basename="/Autointellica-data-analytics">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/upload" element={<DataUpload />} />
@@ -30,6 +31,7 @@ function App() {
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/reports" element={<Reports />} />
             </Routes>
+            </Router>
           </main>
           
           {/* Footer - Always at bottom */}

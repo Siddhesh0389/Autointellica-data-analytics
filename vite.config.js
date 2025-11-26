@@ -7,8 +7,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base:"/Autointellica-data-analytics",
   server: {
-    port: "/Autointellica-data-analytics",
+    port: 3000,
     proxy: {
       '/api': {
         target: 'https://autointellica-backend.onrender.com',
